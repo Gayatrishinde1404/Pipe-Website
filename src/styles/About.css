@@ -1,0 +1,85 @@
+/* styles/About.css */
+.about {
+    background-color: rgb(227, 236, 243);
+    color: #fff;
+    padding: 100px 20px;
+    border-top: 2px solid #fff;
+    /* Solid black border at the top */
+    text-align: center;
+}
+
+.about-content {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.about h2 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    font-weight: bold;
+    color: black;
+}
+
+.about p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    text-align: left;
+    color: black;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 30px;
+}
+
+.social-icons a {
+    color: black;
+    border: 2px solid black;
+    padding:10px;
+    border-radius: 20%;
+    font-size: 1.5rem;
+    transition: transform 0.3s ease-in-out;
+}
+
+.social-icons a:hover {
+    transform: scale(1.1);
+}
+
+  @keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .about h2 {
+        font-size: 2.5rem;
+    }
+
+    .about p {
+        font-size: 1rem;
+    }
+
+    .social-icons a {
+        font-size: 1.2rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .about h2 {
+        font-size: 2rem;
+    }
+
+    .about p {
+        font-size: 0.9rem;
+    }
+}

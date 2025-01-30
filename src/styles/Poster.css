@@ -1,0 +1,57 @@
+/* General Poster Section Styling */
+.poster {
+    background-color: rgb(227, 236, 243);
+    color: #fff;
+    padding: 60px 20px;
+    border-top: 2px solid #fff;
+    /* Border at the top */
+    text-align: center;
+}
+
+/* Poster Carousel Styling */
+.poster-carousel {
+    position: relative;
+    margin: 20px auto;
+    width: 90%;
+    height: 380px;
+    /* Adjust height as needed */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Poster Images with Background Cover */
+.poster-image {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    /* Ensures the image covers the entire container */
+    background-position: center;
+    /* Ensures the image is centered */
+    transition: opacity 1s ease-in-out;
+    opacity: 0;
+    position: absolute;
+    /* Stack images */
+}
+
+/* Show the active image with full opacity */
+.poster-image.active {
+    opacity: 1;
+}
+
+/* Optional: Text Styling for "Our Products" Title */
+.poster h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    font-weight: 600;
+    color: black;
+}
+
+/* Optional: Styling for the background images */
+.poster-image {
+    background-size: cover;
+    background-position: center;
+}

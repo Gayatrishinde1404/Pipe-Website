@@ -1,0 +1,122 @@
+/* Footer Section */
+.footer {
+    background-color: rgb(15, 31, 67);
+    color: #fff;
+    padding: 60px 20px;
+    border-top: 2px solid #fff;
+    text-align: center;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer-column {
+    width: 30%;
+    margin-bottom: 20px;
+}
+
+.footer-logo {
+    width: 150px;
+    margin: 0 auto;
+    /* Center aligns horizontally */
+    margin-bottom: 0;
+    /* Removes gap below */
+    margin-top: -10px;
+    /* Moves the logo slightly upwards */
+}
+
+.footer-description {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-top: 0;
+    color: #fff;
+    /* Removes gap between logo and description */
+}
+
+.footer h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    
+}
+
+.footer-links {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.footer-links li {
+    margin: 8px 0;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.3s ease-in-out;
+}
+
+.footer-links a:hover {
+    color: #3498db;
+}
+
+.footer-address {
+    font-size: 14px;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.footer-address a:hover {
+    color: #3498db;
+}
+
+.footer a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    color: #3498db;
+}
+
+/* Icons Styling */
+.footer-icon {
+    margin-right: 8px;
+    vertical-align: middle;
+    color: #fff;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .footer-column {
+        width: 100%;
+        text-align: center;
+    }
+
+    .footer-container {
+        flex-direction: column;
+    }
+
+    .footer-logo {
+        width: 120px;
+        margin-bottom: 0;
+        /* Ensures no gap below for smaller screens */
+        margin-top: -5px;
+        /* Moves logo slightly up on smaller screens */
+    }
+
+    .footer-description {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .footer-description {
+        font-size: 12px;
+    }
+
+    .footer h3 {
+        font-size: 16px;
+    }
+}

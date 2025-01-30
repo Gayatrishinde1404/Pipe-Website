@@ -1,0 +1,105 @@
+/* General header styles */
+.header {
+    background: rgb(15, 31, 67);
+    color: #fff;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+    height: 80px;
+    /* Fixed header height */
+}
+
+/* Logo container for image and text */
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    /* Increased gap for better spacing */
+    height: 100%;
+    width: 90%;
+    /* Ensure the logo container stays within the header height */
+}
+
+/* Pipe logo image */
+.pipe-logo {
+    width: 120px;
+    /* Increased image size */
+    height: 100px;
+    /* Keep aspect ratio */
+    max-height: 100px;
+    /* Limit height to ensure it fits inside the header */
+    object-fit: contain;
+    /* Ensures the image scales properly without distortion */
+    filter: brightness(1.2) contrast(1.1);
+    /* Brighten the image slightly */
+}
+
+/* Logo text */
+.logo-text {
+     font-size:x-large;
+    /* Increased text size for better visibility */
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+   
+}
+
+
+/* Navigation styles */
+.header .nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    
+   
+}
+
+.header .nav ul li a {
+    color: #fff;
+    font-size: 1.1rem;
+    text-decoration: none;
+    position: relative;
+    transition: color 0.3s ease-in-out;
+
+}
+
+.header .nav ul li a:hover {
+    color: black;
+    text-decoration: underline;
+}
+
+/* Hamburger Menu */
+.hamburger {
+    display: none;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+    .header .nav ul {
+        display: none;
+        flex-direction: column;
+        background-color:rgb(76, 76, 76);
+        position: absolute;
+        top: 60px;
+        right: 20px;
+        padding: 10px;
+        border-radius: 8px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    }
+
+    .header .nav ul.active {
+        display: flex;
+    }
+
+    .hamburger {
+        display: block;
+    }
+}

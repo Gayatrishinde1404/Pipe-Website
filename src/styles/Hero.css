@@ -1,0 +1,105 @@
+/* styles/Hero.css */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    /* Aligning the content to the left */
+    text-align: left;
+    /* Align text to the left */
+    padding: 100px 20px;
+    background-image: url('../assets/heroimages.png');
+    /* Path to your image */
+    background-size: cover;
+    background-color: rgb(227, 236, 243);
+    background-position: center;
+    color: black;
+    height: 100vh;
+}
+
+.hero-content {
+    max-width: 600px;
+    /* Adjusting width as per your needs */
+    z-index: 10;
+    /* Ensure text is above the background */
+    margin-left: 20px;
+    /* Shift content slightly to the right */
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.hero p {
+    font-size: 1.4rem;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.hero ul {
+    font-size: 1.2rem;
+    list-style-type: none;
+    color: #fff;
+}
+
+
+
+/* Responsive design */
+@media screen and (max-width: 768px) {
+    .hero {
+        padding: 50px 20px;
+        height: 80vh;
+        /* Adjust height on mobile */
+    }
+
+    .hero-content {
+        max-width: 90%;
+        /* Allow the content to take up more space on small screens */
+        text-align: center;
+        /* Center align text */
+        margin-left: 20px;
+        /* Slightly shift content to the right */
+    }
+
+    .hero h1 {
+        font-size: 1rem;
+        /* Adjust font size */
+    }
+
+    .hero p {
+        font-size: 1rem;
+        /* Adjust font size */
+    }
+
+    .hero ul {
+        font-size: 0.9rem;
+        /* Adjust list font size */
+    }
+
+    
+}
+
+@media screen and (max-width: 480px) {
+    .hero {
+        padding: 30px 15px;
+        height: 70vh;
+        /* Further adjust height for very small devices */
+    }
+
+    .hero-content {
+        margin-left: 10px;
+        /* Shift content more to the right on very small screens */
+    }
+
+    .hero h1 {
+        font-size: 1.8rem;
+        /* Adjust further on very small screens */
+    }
+
+    .hero p {
+        font-size: 0.9rem;
+    }
+
+    
+}
