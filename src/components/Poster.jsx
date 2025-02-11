@@ -1,16 +1,18 @@
 import React, { useState, useEffect } from "react";
 import "../styles/Poster.css";
-import rccImage from "../assets/Rccpipeimage.png";
-import spunImage from "../assets/spunimg.png";
-import chamberImage from "../assets/chemberimage.png";
-import coverImage from "../assets/coverimage.png";
+import HDPEImage from "../assets/HDPEimg.png";
+import humeImage from "../assets/humeimg.png";
+import schamberImage from "../assets/schemberimg.png";
+import jackingpipeImage from "../assets/jackingpipeimg.png";
+import roundpipeImage from "../assets/coverimage.png";
 
 const Poster = () => {
   const products = [
-    { id: 1, name: "RCC Pipes", image: rccImage },
-    { id: 2, name: "Spun Pipes", image: spunImage },
-    { id: 3, name: "Chamber Pipes", image: chamberImage },
-    { id: 4, name: "Chamber Covers", image: coverImage },
+    { id: 1, name: "HDPE Lined RCC Pipe", image: HDPEImage },
+    { id: 2, name: "RCC Hume Pipe", image: humeImage },
+    { id: 3, name: "Square RCC Chamber", image: schamberImage },
+    { id: 4, name: "RCC Jacking Pipe", image: jackingpipeImage },
+    { id: 5, name: "Round Chamber Cover", image: roundpipeImage },
   ];
 
   const [currentIndex, setCurrentIndex] = useState(0);

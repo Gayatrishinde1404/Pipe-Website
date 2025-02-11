@@ -33,6 +33,9 @@ const Header = () => {
             <a href="#products">Products</a>
           </motion.li>
           <motion.li whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.95 }}>
+            <a href="#gallery">Gallery</a>
+          </motion.li>
+          <motion.li whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.95 }}>
             <a href="#footer">Contact</a>
           </motion.li>
         </ul>

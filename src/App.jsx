@@ -6,6 +6,8 @@ import Footer from "./components/Footer";
 import './styles/global.css';
 import About from "./components/About";
 import Poster from "./components/Poster";
+import WhyChooseUs from "./components/WhyChooseUs";
+import Gallery from "./components/Gallery";
 
 
 const App = () => {
@@ -16,6 +18,8 @@ const App = () => {
       <About />
       <Products />
       <Poster />
+      < WhyChooseUs />
+      < Gallery />
       <Footer />
     </div>
   );

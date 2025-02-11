@@ -1,9 +1,10 @@
 import React, { useState } from "react";
 import "../styles/Products.css";
-import rccImage from "../assets/Rccpipeimage.png";
-import spunImage from "../assets/spunimg.png";
-import chamberImage from "../assets/chemberimage.png";
-import coverImage from "../assets/coverimage.png";
+import HDPEImage from "../assets/HDPEimg.png";
+import humeImage from "../assets/humeimg.png";
+import schamberImage from "../assets/schemberimg.png";
+import jackingpipeImage from "../assets/jackingpipeimg.png";
+import roundpipeImage from "../assets/coverimage.png";
 import { motion } from "framer-motion";
 import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
 
@@ -13,35 +14,43 @@ const Products = () => {
   const products = [
     {
       id: 1,
-      name: "RCC",
-      category: "RCC Pipes",
-      image: rccImage,
+      name: "HDPE Lined RCC Pipes",
+      category: "HDPE Lined RCC Pipes",
+      image: HDPEImage,
       description:
-        "RCC pipes are used for a variety of applications in construction and infrastructure projects. They are known for their durability, corrosion resistance, and cost-effectiveness. Our RCC pipes go through a stringent quality control process to ensure reliability and longevity.",
+        "lined RCC pipes are perfect for sewage, drainage, and industrial wastewater systems due to their corrosion resistance and smooth inner surface. These pipes are manufactured by casting high-strength reinforced concrete and lining it with HDPE, which prevents chemical damage and reduces friction for efficient flow. The use of premium-grade materials and strict quality control ensures long-lasting performance, making them ideal for municipal and industrial applications.",
     },
     {
       id: 2,
-      name: "Spun",
-      category: "Spun Pipes",
-      image: spunImage,
+      name: "RCC Hume Pipes",
+      category: "RCC Hume Pipes",
+      image: humeImage,
       description:
-        "Spun pipes are often used in industrial settings due to their strength and reliability. They are made from high-quality materials and undergo a special spinning process that enhances their performance. They are ideal for handling high pressure and harsh conditions.",
+        "RCC Hume pipes are widely used for water drainage, irrigation, road culverts, and underground sewage systems, offering exceptional strength and durability. Manufactured through centrifugal casting with reinforced concrete, these pipes are designed to withstand heavy loads and soil pressure. With rigorous quality checks for load-bearing capacity and water tightness, they provide a reliable and long-lasting solution for various infrastructure projects.",
     },
     {
       id: 3,
-      name: "Chamber",
-      category: "Chamber Pipes",
-      image: chamberImage,
+      name: "Square Chamber Covers",
+      category: "Square Chamber Covers",
+      image: schamberImage,
       description:
-        "Chamber pipes are essential for various underground applications, such as sewage and stormwater systems. They are designed to handle the heavy loads of underground infrastructure while ensuring optimal water flow and durability.",
+        "Square RCC chambers are essential for underground drainage, maintenance access, and utility enclosures, ensuring structural stability and easy inspection. Made from reinforced concrete with precision molds, these chambers offer high durability and load resistance. Designed with pre-formed openings for smooth pipeline connectivity, they undergo strict quality control to ensure longevity and performance in demanding conditions.",
     },
     {
       id: 4,
-      name: "Chamber Covers",
-      category: "Chamber Covers",
-      image: coverImage,
+      name: "RCC Jacking Pipes",
+      category: "RCC Jacking Pipes",
+      image: jackingpipeImage,
       description:
-        "Our chamber covers are built with precision and high-quality materials, ensuring that they can withstand heavy traffic loads and environmental pressures. They are designed to provide safe and secure access to underground utilities.",
+        "RCC Jacking pipes are specially designed for trenchless installation, making them ideal for underground utility projects without surface disruption. Constructed using high-strength reinforced concrete, these pipes can withstand extreme jacking forces while maintaining alignment and leak-proof joints. Manufactured with precision casting techniques and tested for durability, they provide a long-lasting and efficient solution for urban infrastructure and tunneling applications.",
+    },
+        {
+      id: 5,
+      name: "Round Chamber Cover",
+      category: "Round Chamber Cover",
+      image: roundpipeImage,
+      description:
+        "Round chamber covers provide a strong and durable solution for securing underground drainage and utility access points. Made from reinforced concrete, they withstand heavy loads and harsh conditions. Precision casting ensures a perfect fit, while strict quality checks guarantee longevity and reliability.",
     },
   ];
 
@@ -73,10 +82,11 @@ const Products = () => {
       <div className="filters">
         <select onChange={handleCategoryChange} value={category}>
           <option value="all">All</option>
-          <option value="RCC Pipes">RCC Pipes</option>
-          <option value="Spun Pipes">Spun Pipes</option>
-          <option value="Chamber Pipes">Chamber Pipes</option>
-          <option value="Chamber Covers">Chamber Covers</option>
+          <option value="HDPE Lined RCC Pipes">HDPE Lined RCC Pipes</option>
+          <option value="RCC Hume Pipes">RCC Hume Pipes</option>
+          <option value="Square Chamber Covers">Square Chamber Covers</option>
+          <option value="RCC Jacking Pipes">RCC Jacking Pipes</option>
+          <option value="Round Chamber Cover">Round Chamber Cover</option> 
         </select>
       </div>
 
