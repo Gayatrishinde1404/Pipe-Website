@@ -53,6 +53,12 @@
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
+.check-icon {
+    color: #28a745;
+    /* Green color */
+    margin-right: 8px;
+}
+
 @media (max-width: 768px) {
     .why-choose-us-container {
         flex-direction: column;

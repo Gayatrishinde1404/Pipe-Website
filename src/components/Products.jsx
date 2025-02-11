@@ -18,7 +18,7 @@ const Products = () => {
       category: "HDPE Lined RCC Pipes",
       image: HDPEImage,
       description:
-        "lined RCC pipes are perfect for sewage, drainage, and industrial wastewater systems due to their corrosion resistance and smooth inner surface. These pipes are manufactured by casting high-strength reinforced concrete and lining it with HDPE, which prevents chemical damage and reduces friction for efficient flow. The use of premium-grade materials and strict quality control ensures long-lasting performance, making them ideal for municipal and industrial applications.",
+        "Lined RCC pipes are ideal for sewage, drainage, and industrial wastewater systems due to their corrosion resistance and smooth HDPE-lined surface, ensuring efficient flow and durability. Made from high-strength reinforced concrete, they offer long-lasting performance for municipal and industrial use.",
     },
     {
       id: 2,
@@ -26,15 +26,15 @@ const Products = () => {
       category: "RCC Hume Pipes",
       image: humeImage,
       description:
-        "RCC Hume pipes are widely used for water drainage, irrigation, road culverts, and underground sewage systems, offering exceptional strength and durability. Manufactured through centrifugal casting with reinforced concrete, these pipes are designed to withstand heavy loads and soil pressure. With rigorous quality checks for load-bearing capacity and water tightness, they provide a reliable and long-lasting solution for various infrastructure projects.",
+        "RCC Hume pipes are strong, durable, and ideal for drainage, irrigation, culverts, and sewage systems. Made with reinforced concrete, they withstand heavy loads and soil pressure, ensuring reliability for infrastructure projects. Rigorously tested for strength and water tightness, they offer long-lasting performance.",
     },
     {
       id: 3,
-      name: "Square Chamber Covers",
-      category: "Square Chamber Covers",
+      name: "Square RCC Chamber",
+      category: "Square RCC Chamber",
       image: schamberImage,
       description:
-        "Square RCC chambers are essential for underground drainage, maintenance access, and utility enclosures, ensuring structural stability and easy inspection. Made from reinforced concrete with precision molds, these chambers offer high durability and load resistance. Designed with pre-formed openings for smooth pipeline connectivity, they undergo strict quality control to ensure longevity and performance in demanding conditions.",
+        "Square RCC chambers provide durable, load-resistant solutions for drainage, maintenance access, and utility enclosures. With pre-formed openings for easy pipeline connectivity, they ensure stability and long-lasting performance. Made from reinforced concrete, they withstand harsh conditions with strict quality control.",
     },
     {
       id: 4,
@@ -42,7 +42,7 @@ const Products = () => {
       category: "RCC Jacking Pipes",
       image: jackingpipeImage,
       description:
-        "RCC Jacking pipes are specially designed for trenchless installation, making them ideal for underground utility projects without surface disruption. Constructed using high-strength reinforced concrete, these pipes can withstand extreme jacking forces while maintaining alignment and leak-proof joints. Manufactured with precision casting techniques and tested for durability, they provide a long-lasting and efficient solution for urban infrastructure and tunneling applications.",
+        "RCC Jacking pipes enable trenchless installation for underground utilities without surface disruption. Made from high-strength concrete, they withstand extreme jacking forces, ensuring durability and leak-proof joints for urban infrastructure. Precision-manufactured and tested for long-lasting performance.",
     },
         {
       id: 5,
@@ -84,7 +84,7 @@ const Products = () => {
           <option value="all">All</option>
           <option value="HDPE Lined RCC Pipes">HDPE Lined RCC Pipes</option>
           <option value="RCC Hume Pipes">RCC Hume Pipes</option>
-          <option value="Square Chamber Covers">Square Chamber Covers</option>
+          <option value="Square RCC Chamber">Square RCC Chamber</option>
           <option value="RCC Jacking Pipes">RCC Jacking Pipes</option>
           <option value="Round Chamber Cover">Round Chamber Cover</option> 
         </select>

@@ -38,10 +38,10 @@ const Hero = () => {
           transition={{ duration: 1 }}
         >
           Manufacturer and Supplier of :
-          <li>- RCC Pipes</li>
-          <li>- Spun</li>
-          <li>- Chamber</li>
-          <li>- Chamber Cover</li>
+          <li>- HDPE Lined RCC Pipes</li>
+          <li>- RCC Hume Pipes</li>
+          <li>- Chamber Covers</li>
+          <li>- RCC Jacking Pipes</li>
         </motion.ul>
       </motion.div>
     </section>
