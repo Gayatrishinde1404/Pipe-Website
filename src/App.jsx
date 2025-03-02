@@ -8,6 +8,7 @@ import About from "./components/About";
 import Poster from "./components/Poster";
 import WhyChooseUs from "./components/WhyChooseUs";
 import Gallery from "./components/Gallery";
+import Extrapipe from "./components/Extrapipe";
 
 
 const App = () => {
@@ -17,6 +18,7 @@ const App = () => {
       <Hero />
       <About />
       <Products />
+      <Extrapipe />
       <Poster />
       < WhyChooseUs />
       < Gallery />

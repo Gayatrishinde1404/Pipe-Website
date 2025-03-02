@@ -10,6 +10,7 @@ import ved2 from "../assets/gallery/ved2.mp4";
 import ved3 from "../assets/gallery/ved3.mp4";
 import ved4 from "../assets/gallery/ved4.mp4";
 import ved5 from "../assets/gallery/ved5.mp4";
+import ved6 from "../assets/gallery/ved6.mp4";
 
 const Gallery = () => {
   const [showAll, setShowAll] = useState(false);
@@ -36,6 +37,7 @@ const Gallery = () => {
             <video src={ved3} className="gallery-video" controls onClick={() => setEnlargedVideo(ved3)} />
             <video src={ved4} className="gallery-video" controls onClick={() => setEnlargedVideo(ved4)} />
             <video src={ved5} className="gallery-video" controls onClick={() => setEnlargedVideo(ved5)} />
+            <video src={ved6} className="gallery-video" controls onClick={() => setEnlargedVideo(ved6)} />
           </>
         )}
       </div>

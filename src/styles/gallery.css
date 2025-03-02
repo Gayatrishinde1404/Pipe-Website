@@ -1,8 +1,21 @@
+/* Reset Inherited Styles */
+.gallery * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 /* Gallery Section */
 .gallery {
-    padding: 40px;
+    width: 100%;
+    padding: 50px 20px;
+    /* Ensures proper spacing */
     text-align: center;
     background-color: #f8f9fa;
+    display: flex;
+    flex-direction: column;
+    /* Forces everything into a column layout */
+    align-items: center;
 }
 
 /* Title */
@@ -10,21 +23,26 @@
     font-size: 2rem;
     font-weight: bold;
     margin-bottom: 20px;
+    /* Proper spacing */
     color: #333;
+    text-align: center;
+    width: 100%;
 }
 
-/* Grid Layout */
+/* Gallery Container */
 .gallery-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    /* Centers images */
     gap: 15px;
+    width: 100%;
+    max-width: 900px;
 }
 
 /* Images */
 .gallery-image {
     width: 300px;
-    /* Medium size */
     height: 200px;
     object-fit: cover;
     border-radius: 10px;
@@ -35,44 +53,19 @@
     transform: scale(1.05);
 }
 
-/* Videos */
-.gallery-video {
-    width: 300px;
-    height: 200px;
-    object-fit: cover;
-    border-radius: 10px;
-    cursor: pointer;
-    transition: transform 0.3s ease-in-out;
-}
-
-.gallery-video:hover {
-    transform: scale(1.05);
-}
-
-/* Enlarged Video */
-.video-overlay {
-    position: fixed;
-    top: 0;
-    left: 0;
+/* Button Wrapper */
+.button-container {
     width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.8);
+    text-align: center;
+    /* Ensures the button is centered */
+    margin-top: 20px;
     display: flex;
     justify-content: center;
-    align-items: center;
-    z-index: 1000;
+    /* Keeps it below images */
 }
 
-.video-overlay video {
-    width: 80%;
-    max-width: 800px;
-    height: auto;
-    border-radius: 10px;
-}
-
-/* "See More" and "See Less" Button */
+/* "See More" Button */
 .see-more-btn {
-    margin-top: 20px;
     background-color: rgb(15, 31, 67);
     color: white;
     font-size: 18px;
@@ -94,8 +87,7 @@
         align-items: center;
     }
 
-    .gallery-image,
-    .gallery-video {
+    .gallery-image {
         width: 90%;
         height: auto;
     }
