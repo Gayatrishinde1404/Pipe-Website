@@ -79,16 +79,6 @@ const Products = () => {
   return (
     <section id="products" className="products">
       <h2>Our Products</h2>
-      <div className="filters">
-        <select onChange={handleCategoryChange} value={category}>
-          <option value="all">All</option>
-          <option value="HDPE Lined RCC Pipes">HDPE Lined RCC Pipes</option>
-          <option value="RCC Hume Pipes">RCC Hume Pipes</option>
-          <option value="Square RCC Chamber">Square RCC Chamber</option>
-          <option value="RCC Jacking Pipes">RCC Jacking Pipes</option>
-          <option value="Round Chamber Cover">Round Chamber Cover</option> 
-        </select>
-      </div>
 
       <div className="product-carousel">
         <motion.div
