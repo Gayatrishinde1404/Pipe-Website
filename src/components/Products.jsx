@@ -12,21 +12,23 @@ const Products = () => {
   const [category, setCategory] = useState("all"); // Default category is "all"
 
   const products = [
+   
     {
       id: 1,
-      name: "HDPE Lined RCC Pipes",
-      category: "HDPE Lined RCC Pipes",
-      image: HDPEImage,
-      description:
-        "Lined RCC pipes are ideal for sewage, drainage, and industrial wastewater systems due to their corrosion resistance and smooth HDPE-lined surface, ensuring efficient flow and durability. Made from high-strength reinforced concrete, they offer long-lasting performance for municipal and industrial use.",
-    },
-    {
-      id: 2,
       name: "RCC Hume Pipes",
       category: "RCC Hume Pipes",
       image: humeImage,
       description:
         "RCC Hume pipes are strong, durable, and ideal for drainage, irrigation, culverts, and sewage systems. Made with reinforced concrete, they withstand heavy loads and soil pressure, ensuring reliability for infrastructure projects. Rigorously tested for strength and water tightness, they offer long-lasting performance.",
+    },
+
+     {
+      id: 2,
+      name: "HDPE Lined RCC Pipes",
+      category: "HDPE Lined RCC Pipes",
+      image: HDPEImage,
+      description:
+        "Lined RCC pipes are ideal for sewage, drainage, and industrial wastewater systems due to their corrosion resistance and smooth HDPE-lined surface, ensuring efficient flow and durability. Made from high-strength reinforced concrete, they offer long-lasting performance for municipal and industrial use.",
     },
     {
       id: 3,

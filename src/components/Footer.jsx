@@ -35,7 +35,7 @@ const Footer = () => {
             <FaMapMarkerAlt className="footer-icon" />
             Address: 
             <a 
-              href="https://www.google.com/maps?q=Peth+Naigaon,Taluka+Haveli,Dist-Pune,412110" 
+              href="https://maps.app.goo.gl/RSmu6rYceMDWSF3u8?g_st=aw" 
               target="_blank" 
               rel="noopener noreferrer"
               className="footer-address"

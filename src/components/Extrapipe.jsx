@@ -15,39 +15,63 @@ const Extrapipe = () => {
       <h2>📏 Available Sizes & Grades</h2>
       <table className="pipe-table">
         <thead>
-          <tr>
-            <th>Pipe Size (Inches)</th>
-            <th>Diameter (mm)</th>
-            <th>Grade Options</th>
-            <th>Application</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>6"</td>
-            <td>150 mm</td>
-            <td>NP2</td>
-            <td>Drainage, Small Culverts</td>
-          </tr>
-          <tr>
-            <td>8"</td>
-            <td>200 mm</td>
-            <td>NP2</td>
-            <td>Sewerage, Irrigation</td>
-          </tr>
-          <tr>
-            <td>10"</td>
-            <td>250 mm</td>
-            <td>NP2, NP3</td>
-            <td>Road Culverts, Stormwater</td>
-          </tr>
-          <tr>
-            <td>12"</td>
-            <td>300 mm</td>
-            <td>NP2, NP3</td>
-            <td>High-Load Drainage, Infrastructure</td>
-          </tr>
-        </tbody>
+    <tr>
+      <th>Pipe Size (Inches)</th>
+      <th>Diameter (mm)</th>
+      <th>Grade Options</th>
+      <th>Application</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>6"</td>
+      <td>150 mm</td>
+      <td>NP2</td>
+      <td>Drainage, Small Culverts</td>
+    </tr>
+    <tr>
+      <td>8"</td>
+      <td>200 mm</td>
+      <td>NP2</td>
+      <td>Sewerage, Irrigation</td>
+    </tr>
+    <tr>
+      <td>10"</td>
+      <td>250 mm</td>
+      <td>NP2, NP3</td>
+      <td>Road Culverts, Stormwater</td>
+    </tr>
+    <tr>
+      <td>12"</td>
+      <td>300 mm</td>
+      <td>NP2, NP3</td>
+      <td>High-Load Drainage, Infrastructure</td>
+    </tr>
+    <tr>
+      <td>18"</td>
+      <td>450 mm</td>
+      <td>NP2, NP3</td>
+      <td>Stormwater Drainage, Road Works</td>
+    </tr>
+    <tr>
+      <td>24"</td>
+      <td>600 mm</td>
+      <td>NP2, NP3</td>
+      <td>Heavy Drainage, Industrial Use</td>
+    </tr>
+    <tr>
+      <td>36"</td>
+      <td>900 mm</td>
+      <td>NP2, NP3</td>
+      <td>Bridges, Large Culverts</td>
+    </tr>
+    <tr>
+      <td>48"</td>
+      <td>1200 mm</td>
+      <td>NP2, NP3</td>
+      <td>Highway Drainage, Large Infrastructure</td>
+    </tr>
+  </tbody>
       </table>
 
       {/* NP2 vs NP3 Comparison Section */}
