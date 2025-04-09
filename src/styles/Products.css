@@ -108,6 +108,36 @@
     cursor: pointer;
 }
 
+.call-section {
+    margin-top: 25px;
+    background-color: #0f1f43;
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid #2c3e50;
+}
+
+.call-text {
+    font-size: 1rem;
+    margin-bottom: 15px;
+    color: #dcdcdc;
+    line-height: 1.5;
+}
+
+.call-button {
+    display: inline-block;
+    background-color: #fff;
+    color: #0f1f43;
+    padding: 12px 25px;
+    font-size: 1rem;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.call-button:hover {
+    background-color: #e68a00;
+}
+
 @media screen and (max-width: 768px) {
     .product-card {
         flex-direction: column;

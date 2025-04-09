@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { FaPhoneAlt } from "react-icons/fa";
 import "../styles/Products.css";
 import HDPEImage from "../assets/HDPEimg.png";
 import humeImage from "../assets/humeimg.png";
@@ -9,10 +10,9 @@ import { motion } from "framer-motion";
 import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
 
 const Products = () => {
-  const [category, setCategory] = useState("all"); // Default category is "all"
+  const [category, setCategory] = useState("all");
 
   const products = [
-   
     {
       id: 1,
       name: "RCC Hume Pipes",
@@ -21,8 +21,7 @@ const Products = () => {
       description:
         "RCC Hume pipes are strong, durable, and ideal for drainage, irrigation, culverts, and sewage systems. Made with reinforced concrete, they withstand heavy loads and soil pressure, ensuring reliability for infrastructure projects. Rigorously tested for strength and water tightness, they offer long-lasting performance.",
     },
-
-     {
+    {
       id: 2,
       name: "HDPE Lined RCC Pipes",
       category: "HDPE Lined RCC Pipes",
@@ -46,7 +45,7 @@ const Products = () => {
       description:
         "RCC Jacking pipes enable trenchless installation for underground utilities without surface disruption. Made from high-strength concrete, they withstand extreme jacking forces, ensuring durability and leak-proof joints for urban infrastructure. Precision-manufactured and tested for long-lasting performance.",
     },
-        {
+    {
       id: 5,
       name: "Round Chamber Cover",
       category: "Round Chamber Cover",
@@ -56,15 +55,9 @@ const Products = () => {
     },
   ];
 
-  // Filtering products based on category
   const filteredProducts = products.filter(
     (product) => category === "all" || product.category === category
   );
-
-  // Handler for changing the category
-  const handleCategoryChange = (e) => {
-    setCategory(e.target.value);
-  };
 
   const [currentIndex, setCurrentIndex] = useState(0);
 
@@ -105,6 +98,18 @@ const Products = () => {
                 <p className="description">
                   {filteredProducts[currentIndex]?.description}
                 </p>
+
+                <div className="call-section">
+                  <p className="call-text">
+                    Want to know more about bulk pricing, pipe sizes, or product variations?<br />
+                    <strong>We’re just a call away.</strong>
+                  </p>
+                  <a className="call-button" href="tel:+917773938682">
+                     <span style={{ color: "green", marginRight: "8px" }}>
+                     <FaPhoneAlt />
+                     </span>Call for Order & Inquiry
+                  </a>
+                </div>
               </div>
             </div>
           ) : (
